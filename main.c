@@ -6,11 +6,9 @@ GENERATE_DYNARRAY(char);
 
 int main(void)
 {
-    int i;
-
     struct dynarray_int *int_dynarray = new_dynarray_int(2);
 
-    for (i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++)
     {
         append_dynarray_int(int_dynarray, i);
     }
@@ -26,7 +24,7 @@ int main(void)
 
     struct dynarray_char *char_dynarr = new_dynarray_char(2);
 
-    for (i = 0; i < 10; i++)
+    for (int i = 0; i < 10; i++)
     {
         append_dynarray_char(char_dynarr, 'a' + i);
     }
